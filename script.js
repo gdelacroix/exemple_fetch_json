@@ -16,12 +16,15 @@
         actorName.innerHTML=_data.firstname + " " + _data.lastname;
         actorPicture.src=_data.picture;
 
-        let moviesList="";
+        let liste=document.createElement("ul");
+        liste.innerHTML="";
+        let movie="";
     // on parcourt la liste des films de l'acteur et on les ajoute à la variable moviesList
         for (let x=0; x<_data.movies.length;x++){
-            moviesList += "<li>" + _data.movies[x].name + "|" + _data.movies[x].year + "</li>";
-        }
+            movie = "<li>" + _data.movies[x].name + "|" + _data.movies[x].year + "</li>";
+        
+            liste.innerHTML +=movie;}
         // on remplit l'élément actorMovies avec la liste des films de l'acteur
-        actorMovies.innerHTML=moviesList;
+        actorMovies.appendChild(liste);
 
     }
