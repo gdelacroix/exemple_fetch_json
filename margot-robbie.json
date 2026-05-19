@@ -1,0 +1,19 @@
+{
+  "firstname": "Margot",
+  "lastname": "Robbie",
+  "picture": "https://ex.smnarnold.com/json/acteurs/margot-robbie.jpg",
+  "movies": [
+    {
+      "name": "Birds of Prey",
+      "year": 2020
+    },
+    {
+      "name": "Once Upon a Time... in Hollywood",
+      "year": 2019
+    },
+    {
+      "name": "I, Tonya",
+      "year": 2017
+    }
+  ]
+}
